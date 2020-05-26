@@ -6,13 +6,12 @@ public class LinkedList<T> {
         Node<T> node = new Node(element, null);
         if (head == null) {
             head = node;
-        }
-        else {
+        } else {
             Node<T> n = head;
-            while(n.next!=null) {
+            while (n.next != null) {
                 n = n.next;
             }
-            n.next =  node;
+            n.next = node;
         }
         size++;
     }
